@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.picComic = New System.Windows.Forms.PictureBox()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblGroupSize = New System.Windows.Forms.Label()
@@ -40,16 +41,18 @@ Partial Class Form1
         '
         'picComic
         '
-        Me.picComic.Location = New System.Drawing.Point(174, 35)
+        Me.picComic.Image = CType(resources.GetObject("picComic.Image"), System.Drawing.Image)
+        Me.picComic.Location = New System.Drawing.Point(0, 0)
         Me.picComic.Name = "picComic"
-        Me.picComic.Size = New System.Drawing.Size(100, 50)
+        Me.picComic.Size = New System.Drawing.Size(800, 151)
+        Me.picComic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picComic.TabIndex = 0
         Me.picComic.TabStop = False
         '
         'lblHeading
         '
         Me.lblHeading.AutoSize = True
-        Me.lblHeading.Location = New System.Drawing.Point(222, 122)
+        Me.lblHeading.Location = New System.Drawing.Point(377, 154)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(51, 17)
         Me.lblHeading.TabIndex = 1
@@ -58,7 +61,7 @@ Partial Class Form1
         'lblGroupSize
         '
         Me.lblGroupSize.AutoSize = True
-        Me.lblGroupSize.Location = New System.Drawing.Point(225, 157)
+        Me.lblGroupSize.Location = New System.Drawing.Point(222, 187)
         Me.lblGroupSize.Name = "lblGroupSize"
         Me.lblGroupSize.Size = New System.Drawing.Size(51, 17)
         Me.lblGroupSize.TabIndex = 2
@@ -66,7 +69,7 @@ Partial Class Form1
         '
         'txtGroup
         '
-        Me.txtGroup.Location = New System.Drawing.Point(568, 151)
+        Me.txtGroup.Location = New System.Drawing.Point(568, 182)
         Me.txtGroup.Name = "txtGroup"
         Me.txtGroup.Size = New System.Drawing.Size(100, 22)
         Me.txtGroup.TabIndex = 3
