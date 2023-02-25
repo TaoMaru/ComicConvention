@@ -31,9 +31,9 @@ Partial Class Form1
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.btnCalc = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.radSuperhero = New System.Windows.Forms.RadioButton()
+        Me.radAutograph = New System.Windows.Forms.RadioButton()
+        Me.radConvention = New System.Windows.Forms.RadioButton()
         Me.grpType = New System.Windows.Forms.GroupBox()
         CType(Me.picComic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpType.SuspendLayout()
@@ -44,122 +44,130 @@ Partial Class Form1
         Me.picComic.Image = CType(resources.GetObject("picComic.Image"), System.Drawing.Image)
         Me.picComic.Location = New System.Drawing.Point(0, 0)
         Me.picComic.Name = "picComic"
-        Me.picComic.Size = New System.Drawing.Size(800, 151)
+        Me.picComic.Size = New System.Drawing.Size(797, 186)
         Me.picComic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picComic.TabIndex = 0
         Me.picComic.TabStop = False
         '
         'lblHeading
         '
-        Me.lblHeading.AutoSize = True
-        Me.lblHeading.Location = New System.Drawing.Point(377, 154)
+        Me.lblHeading.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.Location = New System.Drawing.Point(78, 198)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblHeading.Size = New System.Drawing.Size(639, 77)
         Me.lblHeading.TabIndex = 1
-        Me.lblHeading.Text = "Label1"
+        Me.lblHeading.Text = "Comic Convention Registration"
+        Me.lblHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGroupSize
         '
-        Me.lblGroupSize.AutoSize = True
-        Me.lblGroupSize.Location = New System.Drawing.Point(222, 187)
+        Me.lblGroupSize.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGroupSize.Location = New System.Drawing.Point(226, 296)
         Me.lblGroupSize.Name = "lblGroupSize"
-        Me.lblGroupSize.Size = New System.Drawing.Size(51, 17)
+        Me.lblGroupSize.Size = New System.Drawing.Size(168, 50)
         Me.lblGroupSize.TabIndex = 2
-        Me.lblGroupSize.Text = "Label2"
+        Me.lblGroupSize.Text = "Group Size:"
+        Me.lblGroupSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtGroup
         '
-        Me.txtGroup.Location = New System.Drawing.Point(568, 182)
+        Me.txtGroup.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGroup.Location = New System.Drawing.Point(483, 305)
         Me.txtGroup.Name = "txtGroup"
-        Me.txtGroup.Size = New System.Drawing.Size(100, 22)
+        Me.txtGroup.Size = New System.Drawing.Size(69, 34)
         Me.txtGroup.TabIndex = 3
+        Me.txtGroup.Text = "88"
         '
         'lblCost
         '
-        Me.lblCost.AutoSize = True
-        Me.lblCost.Location = New System.Drawing.Point(202, 350)
+        Me.lblCost.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.Location = New System.Drawing.Point(137, 538)
         Me.lblCost.Name = "lblCost"
-        Me.lblCost.Size = New System.Drawing.Size(51, 17)
+        Me.lblCost.Size = New System.Drawing.Size(319, 51)
         Me.lblCost.TabIndex = 4
-        Me.lblCost.Text = "Label3"
+        Me.lblCost.Text = "Registration Cost:"
+        Me.lblCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrice
         '
-        Me.lblPrice.AutoSize = True
-        Me.lblPrice.Location = New System.Drawing.Point(565, 350)
+        Me.lblPrice.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrice.Location = New System.Drawing.Point(464, 538)
         Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(51, 17)
+        Me.lblPrice.Size = New System.Drawing.Size(236, 51)
         Me.lblPrice.TabIndex = 5
-        Me.lblPrice.Text = "Label4"
+        Me.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnCalc
         '
-        Me.btnCalc.Location = New System.Drawing.Point(205, 408)
+        Me.btnCalc.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalc.Location = New System.Drawing.Point(176, 611)
         Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalc.Size = New System.Drawing.Size(188, 51)
         Me.btnCalc.TabIndex = 6
-        Me.btnCalc.Text = "Button1"
+        Me.btnCalc.Text = "Calculate"
         Me.btnCalc.UseVisualStyleBackColor = True
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(568, 407)
+        Me.btnClear.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(428, 611)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.Size = New System.Drawing.Size(188, 51)
         Me.btnClear.TabIndex = 7
-        Me.btnClear.Text = "Button2"
+        Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'radSuperhero
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(56, 21)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton1.TabIndex = 9
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radSuperhero.AutoSize = True
+        Me.radSuperhero.Location = New System.Drawing.Point(29, 36)
+        Me.radSuperhero.Name = "radSuperhero"
+        Me.radSuperhero.Size = New System.Drawing.Size(420, 26)
+        Me.radSuperhero.TabIndex = 9
+        Me.radSuperhero.TabStop = True
+        Me.radSuperhero.Text = "Convention + Superhero Experience"
+        Me.radSuperhero.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radAutograph
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(56, 48)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton2.TabIndex = 10
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radAutograph.AutoSize = True
+        Me.radAutograph.Location = New System.Drawing.Point(29, 71)
+        Me.radAutograph.Name = "radAutograph"
+        Me.radAutograph.Size = New System.Drawing.Size(306, 26)
+        Me.radAutograph.TabIndex = 10
+        Me.radAutograph.TabStop = True
+        Me.radAutograph.Text = "Convention + Autographs"
+        Me.radAutograph.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'radConvention
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(56, 79)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton3.TabIndex = 11
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.radConvention.AutoSize = True
+        Me.radConvention.Location = New System.Drawing.Point(29, 106)
+        Me.radConvention.Name = "radConvention"
+        Me.radConvention.Size = New System.Drawing.Size(155, 26)
+        Me.radConvention.TabIndex = 11
+        Me.radConvention.TabStop = True
+        Me.radConvention.Text = "Convention"
+        Me.radConvention.UseVisualStyleBackColor = True
         '
         'grpType
         '
-        Me.grpType.Controls.Add(Me.RadioButton1)
-        Me.grpType.Controls.Add(Me.RadioButton3)
-        Me.grpType.Controls.Add(Me.RadioButton2)
-        Me.grpType.Location = New System.Drawing.Point(290, 217)
+        Me.grpType.Controls.Add(Me.radSuperhero)
+        Me.grpType.Controls.Add(Me.radConvention)
+        Me.grpType.Controls.Add(Me.radAutograph)
+        Me.grpType.Font = New System.Drawing.Font("Broadway", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpType.Location = New System.Drawing.Point(121, 384)
         Me.grpType.Name = "grpType"
-        Me.grpType.Size = New System.Drawing.Size(200, 100)
+        Me.grpType.Size = New System.Drawing.Size(553, 141)
         Me.grpType.TabIndex = 12
         Me.grpType.TabStop = False
-        Me.grpType.Text = "GroupBox1"
+        Me.grpType.Text = "Select Badge Type"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(795, 686)
         Me.Controls.Add(Me.grpType)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalc)
@@ -188,8 +196,8 @@ Partial Class Form1
     Friend WithEvents lblPrice As Label
     Friend WithEvents btnCalc As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents radSuperhero As RadioButton
+    Friend WithEvents radAutograph As RadioButton
+    Friend WithEvents radConvention As RadioButton
     Friend WithEvents grpType As GroupBox
 End Class
