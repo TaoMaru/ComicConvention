@@ -44,17 +44,19 @@ Partial Class Form1
         Me.picComic.Image = CType(resources.GetObject("picComic.Image"), System.Drawing.Image)
         Me.picComic.Location = New System.Drawing.Point(0, 0)
         Me.picComic.Name = "picComic"
-        Me.picComic.Size = New System.Drawing.Size(797, 186)
+        Me.picComic.Size = New System.Drawing.Size(797, 208)
         Me.picComic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picComic.TabIndex = 0
         Me.picComic.TabStop = False
         '
         'lblHeading
         '
+        Me.lblHeading.BackColor = System.Drawing.Color.White
         Me.lblHeading.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeading.Location = New System.Drawing.Point(78, 198)
+        Me.lblHeading.ForeColor = System.Drawing.Color.Red
+        Me.lblHeading.Location = New System.Drawing.Point(39, 211)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(639, 77)
+        Me.lblHeading.Size = New System.Drawing.Size(717, 77)
         Me.lblHeading.TabIndex = 1
         Me.lblHeading.Text = "Comic Convention Registration"
         Me.lblHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -62,6 +64,7 @@ Partial Class Form1
         'lblGroupSize
         '
         Me.lblGroupSize.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGroupSize.ForeColor = System.Drawing.Color.Red
         Me.lblGroupSize.Location = New System.Drawing.Point(226, 296)
         Me.lblGroupSize.Name = "lblGroupSize"
         Me.lblGroupSize.Size = New System.Drawing.Size(168, 50)
@@ -71,16 +74,19 @@ Partial Class Form1
         '
         'txtGroup
         '
+        Me.txtGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtGroup.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGroup.ForeColor = System.Drawing.Color.Red
         Me.txtGroup.Location = New System.Drawing.Point(483, 305)
         Me.txtGroup.Name = "txtGroup"
-        Me.txtGroup.Size = New System.Drawing.Size(69, 34)
+        Me.txtGroup.Size = New System.Drawing.Size(55, 34)
         Me.txtGroup.TabIndex = 3
         Me.txtGroup.Text = "88"
         '
         'lblCost
         '
         Me.lblCost.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.ForeColor = System.Drawing.Color.Red
         Me.lblCost.Location = New System.Drawing.Point(137, 538)
         Me.lblCost.Name = "lblCost"
         Me.lblCost.Size = New System.Drawing.Size(319, 51)
@@ -91,6 +97,7 @@ Partial Class Form1
         'lblPrice
         '
         Me.lblPrice.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrice.ForeColor = System.Drawing.Color.Red
         Me.lblPrice.Location = New System.Drawing.Point(464, 538)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(236, 51)
@@ -99,28 +106,36 @@ Partial Class Form1
         '
         'btnCalc
         '
+        Me.btnCalc.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnCalc.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.btnCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalc.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalc.Location = New System.Drawing.Point(176, 611)
+        Me.btnCalc.ForeColor = System.Drawing.Color.Red
+        Me.btnCalc.Location = New System.Drawing.Point(177, 611)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(188, 51)
         Me.btnCalc.TabIndex = 6
         Me.btnCalc.Text = "Calculate"
-        Me.btnCalc.UseVisualStyleBackColor = True
+        Me.btnCalc.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(428, 611)
+        Me.btnClear.ForeColor = System.Drawing.Color.Red
+        Me.btnClear.Location = New System.Drawing.Point(429, 611)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(188, 51)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'radSuperhero
         '
         Me.radSuperhero.AutoSize = True
-        Me.radSuperhero.Location = New System.Drawing.Point(29, 36)
+        Me.radSuperhero.Location = New System.Drawing.Point(55, 29)
         Me.radSuperhero.Name = "radSuperhero"
         Me.radSuperhero.Size = New System.Drawing.Size(420, 26)
         Me.radSuperhero.TabIndex = 9
@@ -131,7 +146,7 @@ Partial Class Form1
         'radAutograph
         '
         Me.radAutograph.AutoSize = True
-        Me.radAutograph.Location = New System.Drawing.Point(29, 71)
+        Me.radAutograph.Location = New System.Drawing.Point(55, 67)
         Me.radAutograph.Name = "radAutograph"
         Me.radAutograph.Size = New System.Drawing.Size(306, 26)
         Me.radAutograph.TabIndex = 10
@@ -142,7 +157,7 @@ Partial Class Form1
         'radConvention
         '
         Me.radConvention.AutoSize = True
-        Me.radConvention.Location = New System.Drawing.Point(29, 106)
+        Me.radConvention.Location = New System.Drawing.Point(55, 105)
         Me.radConvention.Name = "radConvention"
         Me.radConvention.Size = New System.Drawing.Size(155, 26)
         Me.radConvention.TabIndex = 11
@@ -152,10 +167,12 @@ Partial Class Form1
         '
         'grpType
         '
-        Me.grpType.Controls.Add(Me.radSuperhero)
+        Me.grpType.BackColor = System.Drawing.Color.LightSkyBlue
         Me.grpType.Controls.Add(Me.radConvention)
+        Me.grpType.Controls.Add(Me.radSuperhero)
         Me.grpType.Controls.Add(Me.radAutograph)
         Me.grpType.Font = New System.Drawing.Font("Broadway", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpType.ForeColor = System.Drawing.Color.Red
         Me.grpType.Location = New System.Drawing.Point(121, 384)
         Me.grpType.Name = "grpType"
         Me.grpType.Size = New System.Drawing.Size(553, 141)
@@ -167,6 +184,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(795, 686)
         Me.Controls.Add(Me.grpType)
         Me.Controls.Add(Me.btnClear)
@@ -177,9 +195,10 @@ Partial Class Form1
         Me.Controls.Add(Me.lblGroupSize)
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.picComic)
+        Me.ForeColor = System.Drawing.Color.Red
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Comic Convention Registration"
         CType(Me.picComic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpType.ResumeLayout(False)
         Me.grpType.PerformLayout()
