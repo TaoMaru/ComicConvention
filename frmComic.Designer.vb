@@ -81,7 +81,6 @@ Partial Class Form1
         Me.txtGroup.Name = "txtGroup"
         Me.txtGroup.Size = New System.Drawing.Size(55, 34)
         Me.txtGroup.TabIndex = 3
-        Me.txtGroup.Text = "88"
         '
         'lblCost
         '
@@ -182,9 +181,11 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AcceptButton = Me.btnCalc
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(795, 686)
         Me.Controls.Add(Me.grpType)
         Me.Controls.Add(Me.btnClear)
