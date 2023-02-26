@@ -109,7 +109,7 @@ Partial Class Form1
         Me.btnCalc.FlatAppearance.BorderColor = System.Drawing.Color.Gray
         Me.btnCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalc.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalc.ForeColor = System.Drawing.Color.Red
+        Me.btnCalc.ForeColor = System.Drawing.Color.Black
         Me.btnCalc.Location = New System.Drawing.Point(177, 611)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(188, 51)
@@ -124,7 +124,7 @@ Partial Class Form1
         Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Gray
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.ForeColor = System.Drawing.Color.Red
+        Me.btnClear.ForeColor = System.Drawing.Color.Black
         Me.btnClear.Location = New System.Drawing.Point(429, 611)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(188, 51)
