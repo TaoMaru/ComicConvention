@@ -97,7 +97,7 @@ Partial Class Form1
         '
         Me.lblPrice.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrice.ForeColor = System.Drawing.Color.Red
-        Me.lblPrice.Location = New System.Drawing.Point(464, 538)
+        Me.lblPrice.Location = New System.Drawing.Point(424, 538)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(236, 51)
         Me.lblPrice.TabIndex = 5
@@ -120,6 +120,7 @@ Partial Class Form1
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Gray
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
