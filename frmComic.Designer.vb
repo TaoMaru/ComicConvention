@@ -65,7 +65,7 @@ Partial Class Form1
         '
         Me.lblGroupSize.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGroupSize.ForeColor = System.Drawing.Color.Red
-        Me.lblGroupSize.Location = New System.Drawing.Point(226, 296)
+        Me.lblGroupSize.Location = New System.Drawing.Point(241, 296)
         Me.lblGroupSize.Name = "lblGroupSize"
         Me.lblGroupSize.Size = New System.Drawing.Size(168, 50)
         Me.lblGroupSize.TabIndex = 2
@@ -77,16 +77,17 @@ Partial Class Form1
         Me.txtGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtGroup.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGroup.ForeColor = System.Drawing.Color.Red
-        Me.txtGroup.Location = New System.Drawing.Point(483, 305)
+        Me.txtGroup.Location = New System.Drawing.Point(498, 305)
         Me.txtGroup.Name = "txtGroup"
         Me.txtGroup.Size = New System.Drawing.Size(55, 34)
         Me.txtGroup.TabIndex = 3
+        Me.txtGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lblCost
         '
         Me.lblCost.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCost.ForeColor = System.Drawing.Color.Red
-        Me.lblCost.Location = New System.Drawing.Point(137, 538)
+        Me.lblCost.Location = New System.Drawing.Point(136, 538)
         Me.lblCost.Name = "lblCost"
         Me.lblCost.Size = New System.Drawing.Size(319, 51)
         Me.lblCost.TabIndex = 4
@@ -97,10 +98,11 @@ Partial Class Form1
         '
         Me.lblPrice.Font = New System.Drawing.Font("Cooper Black", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrice.ForeColor = System.Drawing.Color.Red
-        Me.lblPrice.Location = New System.Drawing.Point(424, 538)
+        Me.lblPrice.Location = New System.Drawing.Point(423, 538)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(236, 51)
         Me.lblPrice.TabIndex = 5
+        Me.lblPrice.Text = "$0000.00"
         Me.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnCalc
