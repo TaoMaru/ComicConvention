@@ -12,10 +12,8 @@ Public Class Form1
     Const cdecConvention As Decimal = 209D
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' focus on txtGroup & set lblPrice to blank 000 price
-        txtGroup.Focus()
-        radSuperhero.Checked = True
-        lblPrice.Text = ""
+        ' focus on txtGroup & set lblPrice to blank via btnClear
+        btnClear.PerformClick()
     End Sub
 
     Dim strGroup As String
